@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kt Cloud</title>
+
+    <!-- js -->
+    <script src="./js/js.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--팝업-->
+    <div class="popup-wrap">
+      <div class="popup">
+        <div class="popup-img">
+          <img
+            src="https://www.ktcloud.com/upload/2023/02/03/20230203174108330_popup_3.jpg"
+            alt=""
+          />
+        </div>
+        <button class="popup-txt">닫기</button>
+      </div>
+    </div>
+
+    <!--상단 드랍 메뉴-->
+    <div class="top-down-menu false">
+      <div class="bg-box">
+        <div class="menu-box">
+          <!--company-->
+          <div class="setup company container false">
+            <div class="one">Company</div>
+            <div class="two">
+              <ul>
+                <li>
+                  <a href="#">회사소개<span></span></a>
+                </li>
+                <li>
+                  <a href="#">스토리<span></span></a>
+                </li>
+                <li>
+                  <a href="#">윤리ㆍ컴플라이언스<span></span></a>
+                </li>
+                <li><a href="#">위치정보</a></li>
+              </ul>
+            </div>
+
+            <div class="img-box">
+              <div class="menu-img">
+                <img
+                  src="https://www.ktcloud.com/static/img/common/png/cover_company_image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!--Business-->
+          <div class="setup business container false">
+            <div class="one">Business</div>
+            <div class="two">
+              <ul>
+                <li>
+                  <a href="#">Cloud<span></span></a>
+                </li>
+                <li>
+                  <a href="#">IDC<span></span></a>
+                </li>
+                <li><a href="#">AI Cloud</a></li>
+              </ul>
+            </div>
+
+            <div class="img-box">
+              <div class="menu-img">
+                <img
+                  src="https://www.ktcloud.com/static/img/common/png/cover_business_image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!--Media-->
+          <div class="setup media container false">
+            <div class="one">Media</div>
+            <div class="two">
+              <ul>
+                <li>
+                  <a href="#">인사이드<span></span></a>
+                </li>
+                <li>
+                  <a href="#">보도자료<span></span></a>
+                </li>
+                <li><a href="#">세미나</a></li>
+              </ul>
+            </div>
+
+            <div class="img-box">
+              <div class="menu-img">
+                <img
+                  src="https://www.ktcloud.com/static/img/common/png/cover_media_image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!--Lounge-->
+          <div class="setup lounge container false">
+            <div class="one">Lounge+</div>
+            <div class="two">
+              <ul>
+                <li>
+                  <a href="#">Tech+<span></span></a>
+                </li>
+                <li><a href="#">Customer+</a></li>
+              </ul>
+            </div>
+
+            <div class="img-box">
+              <div class="menu-img">
+                <img
+                  src="https://www.ktcloud.com/static/img/common/png/cover_lounge_image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <!--Recruit-->
+          <div class="setup recruit container false">
+            <div class="one"><a href="#">Recruit</a></div>
+
+            <div class="img-box">
+              <div class="menu-img">
+                <img
+                  src="https://www.ktcloud.com/static/img/common/png/cover_recruit_image.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header container-2">
+        <div class="logo-box">
+          <div class="logo-img">
+            <a href="#" class="logos"></a>
+          </div>
+        </div>
+
+        <div class="menu-box">
+          <ul>
+            <li class="menu-1"><a href="#">Company</a></li>
+            <li class="menu-2"><a href="#">Business</a></li>
+            <li class="menu-3"><a href="#">Media</a></li>
+            <li class="menu-4"><a href="#">Lounge+</a></li>
+            <li class="menu-5"><a href="#">Recruit</a></li>
+          </ul>
+        </div>
+
+        <div class="icon-box">
+          <div class="icons">
+            <div class="platform-box">
+              <button aria-expanded="false">PLATFORM</button>
+            </div>
+            <div class="global-box">
+              <button aria-expanded="false"></button>
+            </div>
+            <div class="more-menu-box">
+              <button class="menu-btn"><span class="blind">GNB</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--전체 메뉴 클릭 이벤트-->
+    <div class="top-menu-white false">
+      <div class="header-2 container-2">
+        <div class="logo-box">
+          <div class="logo-img">
+            <a href="#" class="logos"></a>
+          </div>
+        </div>
+
+        <div class="menu-box-white">
+          <ul>
+            <li>
+              <strong>Company</strong>
+              <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">스토리</a></li>
+                <li><a href="#">윤리 · 컴플라이언스</a></li>
+                <li><a href="#">위치정보</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Business</strong>
+              <ul>
+                <li><a href="#">Cloud</a></li>
+                <li><a href="#">IDC</a></li>
+                <li><a href="#">AI Cloud</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Media</strong>
+              <ul>
+                <li><a href="#">인사이드</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">세미나</a></li>
+              </ul>
+            </li>
+            <li>
+              <strong>Lounge+</strong>
+              <ul>
+                <li><a href="#">Tech+</a></li>
+                <li><a href="#">Customer+</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><strong>Recruit</strong></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icon-box">
+          <div class="icons">
+            <div class="platform-box">
+              <button aria-expanded="false">PLATFORM</button>
+            </div>
+            <div class="global-box">
+              <button aria-expanded="false"></button>
+            </div>
+            <div class="more-menu-box">
+              <button class="white-close-btn">
+                <span class="blind">GNB</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ws-menu">
+      <div class="ws-top">
+        <div class="l-logo"></div>
+        <button class="r-btn"></button>
+      </div>
+
+      <ul>
+        <li>
+          <div class="m-title">Company</div>
+          <button class="m-btn"></button>
+
+          <ul class="sub-menu">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">스토리</a></li>
+            <li><a href="#">윤리 · 컴플라이언스</a></li>
+            <li><a href="#">위치정보</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="m-title">Business</div>
+          <button class="m-btn"></button>
+
+          <ul class="sub-menu">
+            <li><a href="#">Cloud</a></li>
+            <li><a href="#">IDC</a></li>
+            <li><a href="#">AI Cloud</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="m-title">Media</div>
+          <button class="m-btn"></button>
+
+          <ul class="sub-menu">
+            <li><a href="#">인사이드</a></li>
+            <li><a href="#">보도자료</a></li>
+            <li><a href="#">세미나</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="m-title">Lounge+</div>
+          <button class="m-btn"></button>
+
+          <ul class="sub-menu">
+            <li><a href="#">Tech+</a></li>
+            <li><a href="#">Customer+</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="m-title">
+            <a href="#">Recruit</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!--본래 헤더 메뉴-->
+    <div class="section">
+      <div class="header container-2">
+        <div class="logo-box">
+          <div class="logo-img">
+            <a href="#" class="logos"></a>
+          </div>
+        </div>
+
+        <div class="menu-box">
+          <ul>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Media</a></li>
+            <li><a href="#">Lounge+</a></li>
+            <li><a href="#">Recruit</a></li>
+          </ul>
+        </div>
+
+        <div class="icon-box">
+          <div class="icons">
+            <div class="platform-box">
+              <button aria-expanded="false">PLATFORM</button>
+            </div>
+            <div class="global-box">
+              <button aria-expanded="false"></button>
+            </div>
+            <div class="more-menu-box">
+              <button class="menu-btn"><span class="blind">GNB</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--반응형 top-->
+    <div class="header-visible container">
+      <div class="logo-box">
+        <div class="logo-img">
+          <a href="#" class="logos"></a>
+        </div>
+      </div>
+
+      <div class="icon-box">
+        <div class="icons">
+          <div class="more-menu-box">
+            <button class="menu-btn ws-button">
+              <span class="blind">GNB</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 텍스트 박스 -->
+    <div class="m-banner-container">
+      <div class="m-b-box">
+        <div class="m-b-img">
+          <div class="m-b-txt container">
+            <a href="#">
+              Company
+              <span class="one">
+                <span class="one-two"></span>
+              </span>
+            </a>
+            <p class="second">시작, 더욱 새로워진 디지털 일상</p>
+            <p class="third">
+              하루의 시작과 끝은 공간을 뛰어넘어
+              <span class="thrid-e">다양한 세상과 연결되어 있습니다.</span>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <!--
+      <div><img src="https://www.ktcloud.com/static/img/pc/png/main_3.png" alt=""></div>
+      <div><img src="https://www.ktcloud.com/static/img/pc/png/main_2.png" alt=""></div>
+      -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 두번째 박스 -->
+    <div class="box-2">
+      <div class="box-2-txt-box container">
+        <strong>
+          Digital Transformation
+          <br />
+          for all X
+        </strong>
+
+        <div class="second-line">
+          <p>
+            차별화된 가치로<br />
+            디지털 혁신 성공을 함께 만들어갑니다.
+          </p>
+
+          <a href="#">
+            <span class="before-btn">자세히 알아보기</span>
+            <span class="more-btn"></span>
+          </a>
+        </div>
+      </div>
+
+      <div class="box-2-img-box container">
+        <div class="tech-box">
+          <div class="t-box-1">
+            <video
+              class="video-effect"
+              src="https://www.ktcloud.com/static/video/common/about_video_1.mp4"
+              playsinline=""
+              controlsList="nodownload"
+              autoplay
+              muted
+            ></video>
+            <span class="video-title">True Cloud</span>
+          </div>
+          <div class="t-box-2">
+            <video
+              class="video-effect"
+              src="https://www.ktcloud.com/static/video/common/about_video_2.mp4"
+              playsinline=""
+              controlsList="nodownload"
+              autoplay
+              muted
+            ></video>
+            <span class="video-title">True Cloud</span>
+          </div>
+          <div class="t-box-3">
+            <video
+              class="video-effect"
+              src="https://www.ktcloud.com/static/video/common/about_video_3.mp4"
+              playsinline=""
+              controlsList="nodownload"
+              autoplay
+              muted
+            ></video>
+            <span class="video-title">True Cloud</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-2-txt-box-visible">
+        <div class="video-box">
+          <video
+            class="video-effect"
+            src="https://www.ktcloud.com/static/video/common/about_video_1.mp4"
+            playsinline=""
+            controlsList="nodownload"
+            autoplay
+            muted
+          ></video>
+          <div class="txt-box container">
+            <div class="top">
+              <div>
+                Digital Transformation
+                <br />
+                for all X
+              </div>
+            </div>
+            <div class="bottom">True Cloud</div>
+          </div>
+        </div>
+
+        <div class="mores container">
+          <div class="second-line">
+            <p>
+              차별화된 가치로<br />
+              디지털 혁신 성공을 함께 만들어갑니다.
+            </p>
+
+            <div>
+              <a href="#">
+                <span class="before-btn">자세히 알아보기</span>
+                <span class="more-btn"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--detail box-->
+      <div class="detail-banner container">
+        <div class="banner-wrap">
+          <div class="banner-v-box">
+            <video
+              class=""
+              src="https://www.ktcloud.com/static/video/common/service_video_3.mp4"
+              playsinline=""
+              controlsList="nodownload"
+              autoplay
+              muted
+            ></video>
+          </div>
+
+          <div class="banner-t-box">
+            <div class="t-box-1">AI Cloud</div>
+            <div class="t-box-2">Global No.1<br />HAC Service</div>
+            <p class="t-box-3">*Hyperscale AI Computing</p>
+
+            <p class="t-box-4">
+              세계 최초 다중-동적 할당 기술을 적용한 HAC으로 AI 모델 대형화에
+              필요한<br />
+              대규모 GPU 클러스터링 기술을 제공합니다.
+            </p>
+
+            <div class="t-box-5">
+              <a href="#">
+                <span class="before-btn">자세히 알아보기</span>
+                <span class="more-btn"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--detail-visible-->
+      <div class="detail-banner-visible">
+        <div class="banner-wrap">
+          <div class="banner-v-box">
+            <video
+              class=""
+              src="https://www.ktcloud.com/static/video/common/service_video_3.mp4"
+              playsinline=""
+              controlsList="nodownload"
+              autoplay
+              muted
+            ></video>
+          </div>
+
+          <div class="banner-t-top container">
+            <div class="t-box-1">AI Cloud</div>
+            <div class="t-box-2">Global No.1<br />HAC Service</div>
+            <p class="t-box-3">*Hyperscale AI Computing</p>
+            <p class="t-box-4">
+              <a href="#">
+                <span class="more-btn"></span>
+              </a>
+            </p>
+          </div>
+
+          <div class="banner-t-bottom container">
+            <p>
+              세계 최초 다중-동적 할당 기술을<br />
+              적용한 HAC으로 AI 모델 대형화에 필요한<br />
+              대규모 GPU 클러스터링 기술을<br />
+              제공합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--news box-->
+      <div class="news-box container">
+        <div class="news-txt-box">
+          <p>kt cloud 소식</p>
+          <div class="btn-effect">
+            <a href="#">
+              <span class="before-btn">더보기</span>
+              <span class="more-btn"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 소식지 박스 -->
+        <div class="news-img-box">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/21/20230221151658896_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9A%A9.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud ‘공공 DaaS’ CSAP 획득∙∙∙ 기관 DaaS 도입 속도 붙나
+                </p>
+                <p class="second-p">2023.02.21</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/10/20230210104140939_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EC%8D%B8%EB%84%A4%EC%9D%BC%EC%9A%A9.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud-휴렛팩커드, ‘IDC 통합 인프라 사업 협력 MOU’ 체결
+                </p>
+                <p class="second-p">2023.02.09</p>
+              </a>
+            </li>
+            <li class="last-li">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/13/20230213113241893_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9A%A9_v5.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud-서울대 AI 연구원, ‘메타버스 기반 정신건강 평가/케어
+                  연구개발 MOU’ 체결
+                </p>
+                <p class="second-p">2023.02.08</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/13/20230213134726202_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9A%A9_v2.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud, 경제·인문사회연구회에 ‘비즈웍스’ 제공∙∙∙ 27개
+                  국책연구기관 업무 효율 높인다
+                </p>
+                <p class="second-p">2023.02.01</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/01/17/20230117133118591_%EC%84%9C%EC%9A%B8%EC%8B%A0%EB%AC%B8%20%EA%B8%B0%EA%B3%A0%EB%AC%B8.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  [서울신문] IDC는 ‘안전, 안정’… 재해복구도 고려해야/김승운
+                  KT클라우드 IDC본부장
+                </p>
+                <p class="second-p">2023.01.17</p>
+              </a>
+            </li>
+            <li class="last-li">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/10/20230210103819383_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9A%A9%20%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud-아콘소프트, 공공 클라우드 전환사업 추진 및 SaaS
+                  서비스 확대 협력 MOU 체결
+                </p>
+                <p class="second-p">2023.01.12</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--news box visible-->
+      <div class="news-box-visible container">
+        <div class="titles">
+          <strong>kt cloud 소식</strong>
+        </div>
+        <div class="imgs">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/21/20230221151658896_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9A%A9.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud ‘공공 DaaS’ CSAP 획득∙∙∙ 기관 DaaS 도입 속도 붙나
+                </p>
+                <p class="second-p">2023.02.21</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/10/20230210104140939_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EC%8D%B8%EB%84%A4%EC%9D%BC%EC%9A%A9.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud-휴렛팩커드, ‘IDC 통합 인프라 사업 협력 MOU’ 체결
+                </p>
+                <p class="second-p">2023.02.09</p>
+              </a>
+            </li>
+            <li class="last-li">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/13/20230213113241893_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9A%A9_v5.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud-서울대 AI 연구원, ‘메타버스 기반 정신건강 평가/케어
+                  연구개발 MOU’ 체결
+                </p>
+                <p class="second-p">2023.02.08</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/13/20230213134726202_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%AF%B8%EB%94%94%EC%96%B4%20%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9A%A9_v2.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud, 경제·인문사회연구회에 ‘비즈웍스’ 제공∙∙∙ 27개
+                  국책연구기관 업무 효율 높인다
+                </p>
+                <p class="second-p">2023.02.01</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/01/17/20230117133118591_%EC%84%9C%EC%9A%B8%EC%8B%A0%EB%AC%B8%20%EA%B8%B0%EA%B3%A0%EB%AC%B8.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  [서울신문] IDC는 ‘안전, 안정’… 재해복구도 고려해야/김승운
+                  KT클라우드 IDC본부장
+                </p>
+                <p class="second-p">2023.01.17</p>
+              </a>
+            </li>
+            <li class="last-li">
+              <a href="#">
+                <div class="img-box">
+                  <img
+                    src="https://www.ktcloud.com/upload/2023/02/10/20230210103819383_%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80%EC%9A%A9%20%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg"
+                    alt=""
+                  />
+                </div>
+                <p class="first-p">
+                  kt cloud-아콘소프트, 공공 클라우드 전환사업 추진 및 SaaS
+                  서비스 확대 협력 MOU 체결
+                </p>
+                <p class="second-p">2023.01.12</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="btn-effect">
+          <a href="#">
+            <span class="before-btn">더보기</span>
+            <span class="more-btn"></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 이미지 배너 박스 -->
+      <div class="big-img-box container">
+        <div class="box-left">
+          <div class="txt-box-left">
+            <div class="txt-1">Career</div>
+            <div class="txt-2">
+              우리의 열정으로 <br />
+              세상이 성장하고 있습니다.
+            </div>
+            <div class="txt-3">
+              <a href="#">
+                <span class="before-btn">인재 채용</span>
+                <span class="more-btn"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-box-left">
+            <img
+              src="https://www.ktcloud.com/static/img/mobile/png/linkcard_image_1.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="box-right">
+          <div class="txt-box-right">
+            <div class="txt-1">Ethics & Compliance</div>
+            <div class="txt-2">
+              사회적 책임과<br />
+              윤리적인 기업 경영
+            </div>
+            <div class="txt-3">
+              <a href="#">
+                <span class="before-btn">윤리 · 컴플라이언스</span>
+                <span class="more-btn"></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="img-box-right">
+            <img
+              src="https://www.ktcloud.com/static/img/mobile/png/linkcard_image_2.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--두개 배너 이미지 visible-->
+      <div class="big-img-box-visible">
+        <div class="img-box">
+          <img
+            src="https://www.ktcloud.com/static/img/mobile/png/linkcard_image_1.png"
+            alt=""
+          />
+        </div>
+        <div class="txt-box container">
+          <div class="top">
+            <div class="txt-1">Career</div>
+            <div class="more-btn"></div>
+          </div>
+          <div class="bottom">
+            우리의 열정으로 <br />
+            세상이 성장하고 있습니다.
+          </div>
+        </div>
+
+        <div class="img-box">
+          <img
+            src="https://www.ktcloud.com/static/img/mobile/png/linkcard_image_2.png"
+            alt=""
+          />
+        </div>
+        <div class="txt-box container">
+          <div class="top">
+            <div class="txt-1">Ethics & Compliance</div>
+            <div class="more-btn btn-2"></div>
+          </div>
+          <div class="bottom">
+            사회적 책임과<br />
+            윤리적인 기업 경영
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-align">
+        <div class="footer-top container">
+          <div class="top-1">
+            <a href="#">개인정보 처리방침</a>
+          </div>
+          <div class="top-2">
+            <a href="#">윤리위반신고</a>
+          </div>
+          <div class="top-3">
+            <button class="site-btn" aria-expanded="false">Family Site</button>
+          </div>
+        </div>
+        <div class="footer-bottom container">
+          <div class="bottom-1">
+            <p class="title">주식회사 케이티클라우드</p>
+
+            <div class="info">
+              <div>
+                <span>대표이사 윤동식</span><span class="bar"></span>
+                <span>서울특별시 강남구 학동로 343 더피나클타워</span
+                ><span class="bar"></span>
+                <span>사업자등록번호 : 696-87-02611</span>
+              </div>
+              <div>
+                <span>대표번호 : 02-541-3202</span><span class="bar"></span>
+                <span>이메일 : pr.ktcloud@kt.com</span>
+              </div>
+              <div>
+                <span>Cloud 고객센터 : 080-2580-005</span
+                ><span class="bar"></span>
+                <span>IDC 고객센터 : 1588-0114</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bottom-2">
+            <div class="img-box">
+              <img
+                src="https://www.ktcloud.com/static/img/common/svg/ico_logo_black.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-visible" style="color: #fff">
+        <div class="container">
+          <div class="txt-1">
+            <a href="#">개인정보 처리방침</a>
+          </div>
+
+          <div class="txt-2">
+            <a href="#">윤리위반신고</a>
+          </div>
+
+          <div class="center">
+            <div class="title">주식회사 케이티클라우드</div>
+
+            <div class="texts">
+              <p>대표이사 윤동식</p>
+              <p>서울특별시 강남구 학동로 343 더피나클타워</p>
+              <p>사업자등록번호 : 696-87-02611</p>
+              <p>대표번호 : 02-541-3202</p>
+              <p>이메일 : pr.ktcloud@kt.com</p>
+              <p>Cloud 고객센터 : 080-2580-005</p>
+              <p>IDC 고객센터 : 1588-0114</p>
+            </div>
+          </div>
+
+          <div class="txt-4">
+            <div class="img-box">
+              <img
+                src="https://www.ktcloud.com/static/img/common/svg/ico_logo_black.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="last">
+            <button class="site-btn" aria-expanded="false">Family Site</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
